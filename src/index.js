@@ -3,6 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+    palette: {
+        primary: {
+            main: '#007aff',
+        },
+        secondary: {
+            main: '#ff2d54',
+        },
+    },
+});
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
